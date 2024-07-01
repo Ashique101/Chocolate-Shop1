@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organic Chocolate Shop</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        header {
+            background-color: #4CAF50;
+            padding: 10px 0;
+            color: white;
+        }
+
+        header .logo {
+            font-size: 2em;
+            font-weight: bold;
+        }
+
+        header .logo span:nth-child(1) { color: #ff5733; }
+        header .logo span:nth-child(2) { color: #33ff57; }
+        header .logo span:nth-child(3) { color: #3357ff; }
+        header .logo span:nth-child(4) { color: #8e5c77; }
+        header .logo span:nth-child(5) { color: #ffcc33; }
+        header .logo span:nth-child(6) { color: #33a1ff; }
+        header .logo span:nth-child(7) { color: #ff5733; }
+        header .logo span:nth-child(8) { color: #33ff57; }
+        header .logo span:nth-child(9) { color: #3357ff; }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        section {
+            padding: 20px;
+        }
+
+        section#home {
+            background-color: #fff;
+        }
+
+        section#products {
+            background-color: #f0f0f0;
+        }
+
+        .product {
+            display: inline-block;
+            width: 30%;
+            margin: 15px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            background-color: white;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+
+        .product:hover {
+            transform: scale(1.05);
+        }
+
+        .product img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        footer {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <span>C</span><span>h</span><span>o</span><span>k</span><span>o</span><span>l</span><span>a</span><span>t</span><span>e</span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h1>Welcome to Organic Chocolate Shop</h1>
+        <p>Discover the finest organic chocolates crafted with love and care.</p>
+    </section>
+
+    <section id="products">
+        <h2>Our Products</h2>
+        <div class="product" onclick="showAlert('Dark Chocolate')">
+            <img src="Image/Cake" alt="Dark Chocolate">
+            <h3>Dark Chocolate</h3>
+            <p>Rich and smooth organic dark chocolate.</p>
+        </div>
+        <div class="product" onclick="showAlert('Milk Chocolate')">
+            <img src="Image/Cake" alt="Milk Chocolate">
+            <h3>Milk Chocolate</h3>
+            <p>Creamy and delightful organic milk chocolate.</p>
+        </div>
+        <div class="product" onclick="showAlert('White Chocolate')">
+            <img src="Image/Cake" alt="White Chocolate">
+            <h3>White Chocolate</h3>
+            <p>Sweet and smooth organic white chocolate.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Organic Chocolate Shop. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function showAlert(productName) {
+            alert("You selected: " + productName);
+        }
+    </script>
+</body>
+</html>
